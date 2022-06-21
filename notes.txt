@@ -17,6 +17,15 @@ function Welcome(props){
 }
 
     *function-components will take in ONE parameter and it's always called 'props'
+    *props are 'properties'
+    - can add any kind of property tag (see example 'brand: 'React Intro' in Nav.js)
+    -can put JavaScript code inside { }, so access the props by
+        ex: {props.brand}
 
 add Bootstrap stylings - 
-copy text
+copy text and put inside div or <>--</>
+
+
+Hooks
+-instead of writing a "stateful" component, can do { useState } without having to write a class
+-will render only the hooked component

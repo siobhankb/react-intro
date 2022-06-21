@@ -9,12 +9,13 @@
 
 import React from 'react'
 
-export default function Nav() {
+export default function Nav(props) {
+  console.log(props)
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Navbar
+          {props.brand}
         </a>
         <button
           className="navbar-toggler"
