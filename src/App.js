@@ -7,16 +7,14 @@ function App() {
   const handleButtonClick = (step) => {
     setCount(count + step)
   }
+  const myButtonSteps = [1, 10, 100, 1000]
   return (
     <div id="fromApp">
       <Nav brand="React Intro" />
       <div className="container">
         <h1>Hello World</h1>
         <h3>Current Value: {count}</h3>
-        <Button step={1} handleClick={handleButtonClick} />
-        <Button step={10} handleClick={handleButtonClick} />
-        <Button step={100} handleClick={handleButtonClick} />
-        <Button step={1000} handleClick={handleButtonClick}  />
+        {myButtonSteps.map((step, i) => <Button step={step} handleClick={handleButtonClick} key={i} />)}
       </div>
     </div>
   );
