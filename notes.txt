@@ -1,0 +1,22 @@
+the app itself will have a framework of logic and components
+
+first - download VS Code extensions:
+ES7+ React/Redux/React-Native snippets
+chrome extension - React Developer Tools
+
+rendering elements
+-React only updates what's necessary:
+    -when ppl interact with the page, the "state" of a component may change
+    -this may lead to the child of the component to change, too
+    *React DOM will compare the element to its children to the previous element & only updates ones that have changed...
+    *think of how each element should LOOK like, rather than updating the whole thing all the time
+
+to define a component, write a JavaScript function:
+function Welcome(props){
+    return <h1>Hello, {props.name}</h1>;
+}
+
+    *function-components will take in ONE parameter and it's always called 'props'
+
+add Bootstrap stylings - 
+copy text
